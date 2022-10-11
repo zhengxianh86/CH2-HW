@@ -9,7 +9,7 @@ int main()
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j <= i; j++)
-			printf("*");
+			printf("%s", "*");
 		printf("\n");
 	}
 
@@ -18,7 +18,7 @@ int main()
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 9; j >= i ; j--)
-			printf("*");
+			printf("%s", "*");
 		printf("\n");
 	}
 	
@@ -29,7 +29,7 @@ int main()
 		for (j = 0; j < i; j++)
 			printf(" ");
 		for (k = 0; k < (10 - i); k++)
-			printf("*");
+			printf("%s", "*");
 		printf("\n");
 	}
 	
@@ -40,7 +40,7 @@ int main()
 		for (j = 0; j < (9 - i); j++)
 			printf(" ");
 		for (k = 0; k <= i; k++)
-			printf("*");
+			printf("%s", "*");
 		printf("\n");
 	}
 }
