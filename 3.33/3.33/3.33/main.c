@@ -3,18 +3,25 @@
 
 int main()
 {
-    int i, j;
-    for (i = 1; i <= 3; i++)
+    int i, j, L, w;
+
+    printf("輸入矩形之長(縱): ");
+    scanf("%d", &L);
+
+    printf("輸入矩形之寬(橫): ");
+    scanf("%d", &w);
+
+    for (i = 1; i <= L; i++)
     {
-        if (i % 2 == 1)
+        if ((i == 1) || (i == L))
         {
-            for (j = 0; j < 12; j++) printf("+");
+            for (j = 1; j <= w; j++) printf("+");
         }
         else
         {
-            for (j = 0; j < 12; j++)
+            for (j = 1; j <= w; j++)
             {
-                if (j % 11 == 0) printf("+");
+                if ((j % w == 0) || (j % w == 1)) printf("+");
                 else
                 {
                     printf(" ");
