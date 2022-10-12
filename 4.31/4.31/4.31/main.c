@@ -24,8 +24,8 @@ int main()
 		for (k = 0; k < (4 - i); k++)
 			printf("*");
 		
-		for (l = 4; l > i; l--)
+		for (l = 4; l >= i; l--)
 			printf("*");
 		printf("\n");
 	}
-}s
+}
